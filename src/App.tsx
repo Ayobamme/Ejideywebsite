@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Programs from './components/Programs';
 import Admissions from './components/Admissions';
+import ApplicationForm from './components/ApplicationForm';
 import Gallery from './components/Gallery';
 import News from './components/News';
 import Contact from './components/Contact';
@@ -21,7 +22,12 @@ function App() {
         {activeSection === 'home' && <Hero setActiveSection={setActiveSection} />}
         {activeSection === 'about' && <About />}
         {activeSection === 'programs' && <Programs />}
-        {activeSection === 'admissions' && <Admissions />}
+        {activeSection === 'admissions' && (
+          <Admissions onStartApplication={() => setActiveSection('application')} />
+        )}
+        {activeSection === 'application' && (
+          <ApplicationForm setActiveSection={setActiveSection} />
+        )}
         {activeSection === 'gallery' && <Gallery />}
         {activeSection === 'news' && <News />}
         {activeSection === 'contact' && <Contact />}
