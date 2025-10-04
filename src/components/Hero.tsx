@@ -66,14 +66,14 @@ export default function Hero({ setActiveSection }: HeroProps) {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 p-8 rounded-xl text-white shadow-lg">
               <BookOpen className="w-12 h-12 mb-4" />
-              <h3 className="text-3xl font-bold mb-2">1,200+</h3>
+              <h3 className="text-3xl font-bold mb-2">200+</h3>
               <p className="text-emerald-100">Students Enrolled</p>
             </div>
 
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-xl text-white shadow-lg">
               <Users className="w-12 h-12 mb-4" />
-              <h3 className="text-3xl font-bold mb-2">85+</h3>
-              <p className="text-blue-100">Expert Faculty Members</p>
+              <h3 className="text-3xl font-bold mb-2">30+</h3>
+              <p className="text-blue-100">Dedicated Teachers</p>
             </div>
 
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-8 rounded-xl text-white shadow-lg">
