@@ -14,6 +14,7 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
     { id: 'about', label: 'About Us' },
     { id: 'programs', label: 'Programs' },
     { id: 'admissions', label: 'Admissions' },
+    { id: 'application', label: 'Application' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'news', label: 'News' },
     { id: 'contact', label: 'Contact' }
@@ -27,8 +28,11 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleNavClick('home')}>
+        <div className="flex items-center h-20 gap-6">
+          <div
+            className="flex items-center space-x-3 cursor-pointer flex-shrink-0"
+            onClick={() => handleNavClick('home')}
+          >
             <div className="bg-emerald-600 p-2 rounded-lg">
               <GraduationCap className="w-8 h-8 text-white" />
             </div>
@@ -38,16 +42,7 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
             </div>
           </div>
 
-          <a
-            href="https://skoolbod.net/login"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden lg:block bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors font-semibold text-sm"
-          >
-            Portal Login
-          </a>
-
-          <nav className="hidden md:flex md:mr-auto md:ml-8 space-x-8">
+          <nav className="hidden md:flex flex-1 justify-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -63,8 +58,17 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
             ))}
           </nav>
 
+          <a
+            href="https://skoolbod.net/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline-flex bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors font-semibold text-sm ml-auto"
+          >
+            Portal Login
+          </a>
+
           <button
-            className="md:hidden text-gray-700"
+            className="md:hidden text-gray-700 ml-auto"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
