@@ -1,6 +1,10 @@
 import { Calendar, FileText, Users, CheckCircle, Phone, Mail } from 'lucide-react';
 
-export default function Admissions() {
+interface AdmissionsProps {
+  onStartApplication: () => void;
+}
+
+export default function Admissions({ onStartApplication }: AdmissionsProps) {
   return (
     <div className="pt-20 bg-white">
       <section className="py-20 bg-gradient-to-br from-emerald-50 via-white to-blue-50">
@@ -118,20 +122,13 @@ export default function Admissions() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
-              { grade: 'Primary (K-5)', annual: '$12,500', monthly: '$1,250' },
-              { grade: 'Middle (6-8)', annual: '$14,500', monthly: '$1,450' },
-              { grade: 'High School (9-12)', annual: '$16,500', monthly: '$1,650' }
+              { grade: 'Primary (K-5)', tuition: '₦1,200,000' },
+              { grade: 'Middle (6-8)', tuition: '₦1,450,000' },
+              { grade: 'High School (9-12)', tuition: '₦1,650,000' }
             ].map((tuition, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{tuition.grade}</h3>
-                <div className="mb-4">
-                  <p className="text-4xl font-bold text-emerald-600">{tuition.annual}</p>
-                  <p className="text-gray-600">per year</p>
-                </div>
-                <div className="border-t border-gray-200 pt-4">
-                  <p className="text-2xl font-semibold text-gray-700">{tuition.monthly}</p>
-                  <p className="text-gray-600">per month</p>
-                </div>
+                <p className="text-4xl font-bold text-emerald-600">{tuition.tuition}</p>
               </div>
             ))}
           </div>
@@ -178,20 +175,23 @@ export default function Admissions() {
                 <Phone className="w-6 h-6 text-emerald-600 mr-4" />
                 <div>
                   <p className="text-sm text-gray-600">Call us</p>
-                  <p className="text-lg font-semibold text-gray-900">+1 (555) 123-4567</p>
+                  <p className="text-lg font-semibold text-gray-900">+234 805 984 2973</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-emerald-600 mr-4" />
                 <div>
                   <p className="text-sm text-gray-600">Email us</p>
-                  <p className="text-lg font-semibold text-gray-900">admissions@ejideyschool.edu</p>
+                  <p className="text-lg font-semibold text-gray-900">info@ejideyschool.ng</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <button className="w-full bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl">
+              <button
+                onClick={onStartApplication}
+                className="w-full bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl"
+              >
                 Start Your Application Online
               </button>
               <p className="text-center text-gray-600 mt-4 text-sm">
