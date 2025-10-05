@@ -33,9 +33,11 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
             className="flex items-center space-x-3 cursor-pointer flex-shrink-0"
             onClick={() => handleNavClick('home')}
           >
-            <div className="bg-emerald-600 p-2 rounded-lg">
-              <GraduationCap className="w-8 h-8 text-white" />
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F58e4c97a77b94d38b03f508a44edfff8?format=webp&width=200"
+              alt="Ejidey Schools logo"
+              className="w-14 h-14 rounded-lg border border-emerald-200 object-contain bg-white p-1"
+            />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Ejidey Schools</h1>
               <p className="text-xs text-emerald-600">Magodo</p>
