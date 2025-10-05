@@ -1,4 +1,4 @@
-import { GraduationCap, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 interface FooterProps {
   setActiveSection: (section: string) => void;
