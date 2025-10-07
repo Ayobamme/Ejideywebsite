@@ -62,17 +62,38 @@ export default function Programs() {
               </p>
               <ul className="space-y-3 text-gray-700">
                 {[
-                  '✨ Standing Activities – helping babies strengthen muscles and balance.',
-                  '✨ Sitting Activities – improving posture, focus, and coordination.',
-                  '✨ Walking Activities – encouraging mobility and confidence.',
-                  '✨ Potty Training – fostering hygiene and independence.',
-                  '✨ Qur’an Listening – developing spiritual connection from an early age.',
-                  '✨ Colour Identification & Creative Play – boosting recognition skills and creativity.',
-                  '✨ And Lots More! – every activity tailored to support all-round growth.'
+                  {
+                    icon: '✨',
+                    text: 'Standing Activities – helping babies strengthen muscles and balance.'
+                  },
+                  {
+                    icon: '✨',
+                    text: 'Sitting Activities – improving posture, focus, and coordination.'
+                  },
+                  {
+                    icon: '✨',
+                    text: 'Walking Activities – encouraging mobility and confidence.'
+                  },
+                  {
+                    icon: '✨',
+                    text: 'Potty Training – fostering hygiene and independence.'
+                  },
+                  {
+                    icon: '✨',
+                    text: 'Qur’an Listening – developing spiritual connection from an early age.'
+                  },
+                  {
+                    icon: '✨',
+                    text: 'Colour Identification & Creative Play – boosting recognition skills and creativity.'
+                  },
+                  {
+                    icon: '✨',
+                    text: 'And Lots More! – every activity tailored to support all-round growth.'
+                  }
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="mr-2">{item.slice(0, 1)}</span>
-                    <span>{item.slice(2)}</span>
+                    <span className="mr-2">{item.icon}</span>
+                    <span>{item.text}</span>
                   </li>
                 ))}
               </ul>
