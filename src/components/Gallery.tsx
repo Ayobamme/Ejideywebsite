@@ -44,6 +44,26 @@ export default function Gallery() {
       url: 'https://images.pexels.com/photos/8923123/pexels-photo-8923123.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'School Events',
       category: 'Events'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fc70c8deca1fa49d7b50db5d60c372525?format=webp&width=800',
+      title: 'Creative Learning Nook',
+      category: 'Based Crèche'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Ff8de39ce56534cc1b0d91f04ac9906bf?format=webp&width=800',
+      title: 'Restful Nap Time Space',
+      category: 'Based Crèche'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd7f889c90e3b47d0a94703c08eb620fa?format=webp&width=800',
+      title: 'Interactive Learning Corners',
+      category: 'Based Crèche'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F28218b43e263468fbf8e40aeb03fe176?format=webp&width=800',
+      title: 'Play-Based Activity Zone',
+      category: 'Based Crèche'
     }
   ];
 
