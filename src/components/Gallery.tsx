@@ -64,6 +64,76 @@ export default function Gallery() {
       url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F28218b43e263468fbf8e40aeb03fe176?format=webp&width=800',
       title: 'Play-Based Activity Zone',
       category: 'Based Crèche'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd9dce6734c0847bf82efd8e31f03fe0d?format=webp&width=800',
+      title: 'Science Models Display',
+      category: 'STEM'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F6923c5663f82499aa66a9fe38a159816?format=webp&width=800',
+      title: 'Geology Exhibit',
+      category: 'Academic'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F54d8b78d223943b392ce697d6e922068?format=webp&width=800',
+      title: 'Discovery Corner',
+      category: 'Early Years'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F50e0200d838b4063b4daf97b3ee5505d?format=webp&width=800',
+      title: 'EYF Creative Classroom',
+      category: 'EYF'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F0ffd7b12a88a489993fc53394fdf26eb?format=webp&width=800',
+      title: 'Nursery Activity Shelves',
+      category: 'Nursery'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F8bb6cec890b347a981064329c77ced3f?format=webp&width=800',
+      title: 'Colourful Ceiling Decor',
+      category: 'Nursery'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Ffd1165ea0e69465c8db172db8c95af96?format=webp&width=800',
+      title: 'Learning Corners',
+      category: 'Nursery'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F9e22348f41e74c17ba5e7db3827c188c?format=webp&width=800',
+      title: 'Interactive Nursery Space',
+      category: 'Nursery'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe342084ff10d4892aa3fb28776971bd0?format=webp&width=800',
+      title: 'STEM Resource Hub',
+      category: 'Primary'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F25aa5d9b69d44937aebc6971a8fea345?format=webp&width=800',
+      title: 'Classroom Displays',
+      category: 'Primary'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F9067e61d32504b7196b66a51dc9b087f?format=webp&width=800',
+      title: 'Reading Corner',
+      category: 'Primary'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fda142d003da044748c5d5ca892062186?format=webp&width=800',
+      title: 'Collaborative Learning Area',
+      category: 'Primary'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe20fc5c1001944808a53828c1ae234a0?format=webp&width=800',
+      title: 'Motivational Classroom',
+      category: 'Primary'
+    },
+    {
+      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F87a855bd8e94446a919c43279bddbf1f?format=webp&width=800',
+      title: 'Welcome Back Setup',
+      category: 'Primary'
     }
   ];
 
