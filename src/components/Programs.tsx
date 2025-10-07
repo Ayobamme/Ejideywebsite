@@ -276,6 +276,18 @@ export default function Programs() {
               <p className="mt-8 text-blue-600 font-semibold">
                 Graduates emerge with strong literacy, numeracy, critical thinking, and creative skills, ready to excel in higher education.
               </p>
+              <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {primaryImages.map((url, index) => (
+                  <div key={index} className="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img
+                      src={url}
+                      alt="Primary school classroom"
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
