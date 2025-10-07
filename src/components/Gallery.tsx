@@ -79,7 +79,7 @@ export default function Gallery() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {['All', 'Academic', 'Arts', 'Sports', 'Facilities', 'Events', 'Technology'].map((category) => (
+            {['All', 'Academic', 'Arts', 'Sports', 'Facilities', 'Events', 'Technology', 'Based Crèche'].map((category) => (
               <button
                 key={category}
                 className={`px-6 py-2 rounded-full font-semibold transition-colors ${
