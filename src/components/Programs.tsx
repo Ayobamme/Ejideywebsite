@@ -1,5 +1,28 @@
 import { BookOpen, Beaker, Music, Trophy, Globe, Calculator, Palette, Microscope } from 'lucide-react';
 
+const eyfImages = [
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd9dce6734c0847bf82efd8e31f03fe0d?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F6923c5663f82499aa66a9fe38a159816?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F54d8b78d223943b392ce697d6e922068?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F50e0200d838b4063b4daf97b3ee5505d?format=webp&width=800'
+];
+
+const nurseryImages = [
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F0ffd7b12a88a489993fc53394fdf26eb?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F8bb6cec890b347a981064329c77ced3f?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Ffd1165ea0e69465c8db172db8c95af96?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F9e22348f41e74c17ba5e7db3827c188c?format=webp&width=800'
+];
+
+const primaryImages = [
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe342084ff10d4892aa3fb28776971bd0?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F25aa5d9b69d44937aebc6971a8fea345?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F9067e61d32504b7196b66a51dc9b087f?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fda142d003da044748c5d5ca892062186?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe20fc5c1001944808a53828c1ae234a0?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F87a855bd8e94446a919c43279bddbf1f?format=webp&width=800'
+];
+
 export default function Programs() {
   return (
     <div className="pt-20 bg-white">
