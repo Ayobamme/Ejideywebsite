@@ -12,19 +12,25 @@ export default function Programs() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             {[
+              {
+                title: 'Based Crèche',
+                subtitle: 'Ages 3 months - 3 years',
+                description: 'Nurturing early learners with structured play, sensory exploration, and caring supervision in a homely environment.',
+                color: 'from-rose-500 to-pink-500'
+              },
+              {
+                title: 'Early Years Foundation (EYF)',
+                subtitle: 'Montessori Approach',
+                description: 'Child-led discovery that builds independence, creativity, and confidence through hands-on Montessori learning experiences.',
+                color: 'from-emerald-500 to-emerald-600'
+              },
               {
                 title: 'Primary School',
                 subtitle: 'Grades K-5',
                 description: 'Building strong foundations in literacy, numeracy, and social skills through engaging, age-appropriate activities.',
                 color: 'from-blue-500 to-blue-600'
-              },
-              {
-                title: 'Middle School',
-                subtitle: 'Grades 6-8',
-                description: 'Developing critical thinking and independence while exploring diverse subjects and discovering personal interests.',
-                color: 'from-emerald-500 to-emerald-600'
               },
               {
                 title: 'High School',
@@ -45,6 +51,47 @@ export default function Programs() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <div>
+              <span className="inline-flex items-center px-4 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold mb-4">
+                Based Crèche Experience
+              </span>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Play, Learn, and Grow Together</h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                We provide a safe, stimulating, and loving environment where every child learns through play and structured activities. Our dedicated caregivers focus on early development milestones while embracing each child’s individuality.
+              </p>
+              <ul className="space-y-3 text-gray-700">
+                {[
+                  '✨ Standing Activities – helping babies strengthen muscles and balance.',
+                  '✨ Sitting Activities – improving posture, focus, and coordination.',
+                  '✨ Walking Activities – encouraging mobility and confidence.',
+                  '✨ Potty Training – fostering hygiene and independence.',
+                  '✨ Qur’an Listening – developing spiritual connection from an early age.',
+                  '✨ Colour Identification & Creative Play – boosting recognition skills and creativity.',
+                  '✨ And Lots More! – every activity tailored to support all-round growth.'
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="mr-2">{item.slice(0, 1)}</span>
+                    <span>{item.slice(2)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fc70c8deca1fa49d7b50db5d60c372525?format=webp&width=800',
+                'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Ff8de39ce56534cc1b0d91f04ac9906bf?format=webp&width=800',
+                'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd7f889c90e3b47d0a94703c08eb620fa?format=webp&width=800',
+                'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F28218b43e263468fbf8e40aeb03fe176?format=webp&width=800'
+              ].map((url, index) => (
+                <div key={index} className="relative overflow-hidden rounded-2xl shadow-lg group">
+                  <img src={url} alt="Based Crèche" className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Core Subjects</h2>
             <p className="text-xl text-gray-600">Comprehensive academic foundation for every student</p>
