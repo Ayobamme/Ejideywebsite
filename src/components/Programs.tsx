@@ -118,7 +118,7 @@ export default function Programs() {
             <p className="text-xl text-gray-600">Comprehensive academic foundation for every student</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {[
               { icon: <BookOpen className="w-10 h-10" />, title: 'Language Arts', color: 'bg-blue-100 text-blue-600' },
               { icon: <Calculator className="w-10 h-10" />, title: 'Mathematics', color: 'bg-emerald-100 text-emerald-600' },
@@ -136,6 +136,100 @@ export default function Programs() {
                 <h3 className="text-lg font-bold text-gray-900">{subject.title}</h3>
               </div>
             ))}
+          </div>
+
+          <div className="space-y-16">
+            <div className="bg-gradient-to-br from-emerald-50 via-white to-blue-50 p-10 rounded-3xl shadow-xl">
+              <span className="inline-flex items-center px-4 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold mb-4">
+                Early Years Foundation (EYF)
+              </span>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Montessori-Inspired Early Learning</h3>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Our EYF program is child-centered, practical, and fun. Montessori principles guide each experience, allowing children to explore independently while guided by attentive facilitators.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  'Phonics, Numeracy, and Sensory Play – building strong literacy and numeracy foundations.',
+                  'Self-Discipline, Independence, and Love for Learning – cultivating responsible and curious learners.',
+                  'Practical Life Activities – encouraging confidence, responsibility, and problem-solving.',
+                  'Creativity and Imagination – through drawing, role play, and storytelling.',
+                  'Fine and Gross Motor Skills – hands-on activities that strengthen coordination and balance.',
+                  'Social Skills and Emotional Growth – teaching sharing, turn-taking, and kindness.',
+                  'Early Exposure to STEM Concepts – through fun, age-appropriate experiments and explorations.'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start bg-white rounded-2xl border border-emerald-100 p-4 shadow-sm">
+                    <span className="text-emerald-600 text-xl mr-3">✅</span>
+                    <span className="text-gray-700 leading-relaxed">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-emerald-700 font-semibold">
+                This foundation ensures a smooth transition into Nursery and Primary education.
+              </p>
+            </div>
+
+            <div className="bg-white p-10 rounded-3xl shadow-xl border border-pink-100">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🏫</span>
+                <h3 className="text-3xl font-bold text-gray-900">Nursery Section</h3>
+              </div>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                The Nursery years blend structured academics with play, exploration, and creativity to ensure balanced development and joyful learning.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  'Early Reading, Phonics, Handwriting, and Number Sense – preparing them for literacy and numeracy mastery.',
+                  'Storytelling, Songs, and Rhymes – boosting vocabulary, comprehension, and self-expression.',
+                  'Social and Moral Lessons – nurturing empathy, respect, and teamwork.',
+                  'Art, Music, and Drama – developing creativity, confidence, and self-expression.',
+                  'Practical Thinking and Problem-Solving – through puzzles, blocks, and interactive play.',
+                  'Nature and Environmental Awareness – fostering love for nature and healthy living.',
+                  'Introduction to ICT – simple, age-appropriate digital learning for the 21st century.',
+                  'Physical Activities and Games – ensuring healthy growth, stamina, and agility.'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start bg-gradient-to-br from-pink-50 to-white rounded-2xl p-4 shadow-sm border border-pink-100">
+                    <span className="text-pink-500 text-xl mr-3">✨</span>
+                    <span className="text-gray-700 leading-relaxed">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-pink-600 font-semibold">
+                By the end of Nursery, children become confident readers, thinkers, and independent learners ready for Primary education.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 via-white to-emerald-50 p-10 rounded-3xl shadow-xl">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">📘</span>
+                <h3 className="text-3xl font-bold text-gray-900">Primary School</h3>
+              </div>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Our Primary program blends academic rigor, creativity, and moral training, giving learners a solid foundation for higher learning and responsible living.
+              </p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  'Core Subjects – English, Mathematics, Science, Social Studies, Arabic, and Qur’an.',
+                  'ICT and Coding (from age 7) – graphics design, animations, web/app building, and technology problem-solving.',
+                  'Daily Drills – spelling, comprehension, handwriting, dictation, and mental maths to sharpen academic skills.',
+                  'Creative Studies – Art, Music, Drama, and Home Economics to encourage innovation and self-expression.',
+                  'Clubs and Societies – Debate, Press Club, Arts & Crafts, STEM Club, and Qur’an Recitation groups.',
+                  'Sports and Games – football, basketball, chess, and indoor games to build fitness and teamwork.',
+                  'Moral and Social Education – instilling values of respect, honesty, and leadership.',
+                  'Entrepreneurship and Practical Life Skills – introducing basic financial literacy, project making, and handiwork.',
+                  'Public Speaking and Reading Culture – weekly presentations, storytelling, and reading programs to build confidence.',
+                  'Field Trips and Excursions – real-world exposure that connects classroom learning to everyday life.',
+                  'Health & Hygiene Education – promoting wellness, safety, and self-care habits.'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start bg-white rounded-2xl border border-blue-100 p-4 shadow-sm">
+                    <span className="text-blue-500 text-xl mr-3">✅</span>
+                    <span className="text-gray-700 leading-relaxed">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-blue-600 font-semibold">
+                Graduates emerge with strong literacy, numeracy, critical thinking, and creative skills, ready to excel in higher education.
+              </p>
+            </div>
           </div>
         </div>
       </section>
