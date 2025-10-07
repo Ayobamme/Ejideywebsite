@@ -231,6 +231,18 @@ export default function Programs() {
               <p className="mt-8 text-pink-600 font-semibold">
                 By the end of Nursery, children become confident readers, thinkers, and independent learners ready for Primary education.
               </p>
+              <div className="mt-8 grid sm:grid-cols-2 gap-4">
+                {nurseryImages.map((url, index) => (
+                  <div key={index} className="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img
+                      src={url}
+                      alt="Nursery learning space"
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 via-white to-emerald-50 p-10 rounded-3xl shadow-xl">
