@@ -198,8 +198,8 @@ export default function Gallery() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="School building"
+                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F25aa5d9b69d44937aebc6971a8fea345?format=webp&width=1200"
+                alt="Ejidey classroom interior"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
@@ -226,8 +226,8 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Library"
+                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe342084ff10d4892aa3fb28776971bd0?format=webp&width=1200"
+                alt="Ejidey resource shelves"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
@@ -254,8 +254,8 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Sports facilities"
+                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F87a855bd8e94446a919c43279bddbf1f?format=webp&width=1200"
+                alt="Indoor activity space"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
@@ -282,8 +282,8 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Science lab"
+                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd9dce6734c0847bf82efd8e31f03fe0d?format=webp&width=1200"
+                alt="Science laboratory equipment"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
