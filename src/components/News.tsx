@@ -3,13 +3,22 @@ import { Calendar, User, ArrowRight } from 'lucide-react';
 export default function News() {
   const newsArticles = [
     {
+      title: 'News Flash: Teachers’ Training Spotlight',
+      excerpt:
+        'We had our Teachers’ Training today where we focused on the nitty-gritties of effective teaching. At Ejidey Schools, we strongly believe in teaching the teachers and training the trainers because our team is our greatest strength. Happy Teachers’ Day to us all!',
+      date: 'October 7, 2025',
+      author: 'Ejidey Schools Newsroom',
+      category: 'Professional Development',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fa20c89ea04c34cfbb447b6d6775da8bf?format=webp&width=1200',
+      featured: true
+    },
+    {
       title: 'Ejidey School Students Win National Science Fair',
       excerpt: 'Our talented students took home first place at the National Science Fair with their innovative project on renewable energy solutions.',
       date: 'March 15, 2024',
       author: 'Dr. Sarah Johnson',
       category: 'Achievement',
-      image: 'https://images.pexels.com/photos/8422149/pexels-photo-8422149.jpeg?auto=compress&cs=tinysrgb&w=800',
-      featured: true
+      image: 'https://images.pexels.com/photos/8422149/pexels-photo-8422149.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       title: 'New STEM Lab Opening This Fall',
