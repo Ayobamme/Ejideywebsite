@@ -119,6 +119,74 @@ export default function Programs() {
         </div>
       </section>
 
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Secondary School Sessions</h2>
+            <p className="text-xl text-gray-600">Flexible scheduling options to accommodate diverse student needs</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-20">
+            {[
+              {
+                title: 'Morning Session',
+                time: '7:30 AM - 1:00 PM',
+                description: 'Ideal for students who excel with early learning. Core academic subjects taught in the morning hours with full curriculum coverage.',
+                features: ['5.5 hours of instruction', 'Core subjects focus', 'Afternoon free for activities'],
+                color: 'from-amber-500 to-orange-500'
+              },
+              {
+                title: 'Afternoon Session',
+                time: '1:30 PM - 7:00 PM',
+                description: 'Perfect for students who prefer later start times. Complete academic program delivered in the afternoon and evening.',
+                features: ['5.5 hours of instruction', 'Full curriculum coverage', 'Morning availability for activities'],
+                color: 'from-blue-500 to-cyan-500'
+              }
+            ].map((session, index) => (
+              <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                <div className={`bg-gradient-to-r ${session.color} p-6 text-white`}>
+                  <h3 className="text-3xl font-bold mb-2">{session.title}</h3>
+                  <p className="text-2xl font-semibold opacity-90">{session.time}</p>
+                </div>
+                <div className="p-8">
+                  <p className="text-gray-700 mb-6 leading-relaxed">{session.description}</p>
+                  <ul className="space-y-3">
+                    {session.features.map((feature, fIndex) => (
+                      <li key={fIndex} className="flex items-start">
+                        <span className="text-emerald-600 mr-3 text-xl">✓</span>
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-emerald-600">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Session Details</h3>
+            <div className="grid md:grid-cols-2 gap-6 text-gray-700">
+              <div>
+                <p className="font-semibold mb-2">Both sessions offer:</p>
+                <ul className="space-y-2 ml-4">
+                  <li>• Identical curriculum and academic standards</li>
+                  <li>• Qualified, experienced teachers</li>
+                  <li>• Same learning outcomes and assessments</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold mb-2">Additional benefits:</p>
+                <ul className="space-y-2 ml-4">
+                  <li>• Smaller class sizes for personalized attention</li>
+                  <li>• Access to all school facilities and resources</li>
+                  <li>• Participation in extracurricular programs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
