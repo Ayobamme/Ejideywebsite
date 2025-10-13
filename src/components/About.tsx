@@ -33,6 +33,21 @@ export default function About() {
               </p>
             </div>
           </div>
+
+          <div className="bg-gradient-to-br from-blue-50 via-white to-emerald-50 p-10 rounded-3xl shadow-xl border border-blue-100">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Learning Environment</h2>
+            <div className="space-y-6">
+              <p className="text-lg text-gray-600 leading-relaxed">
+                At EJIDEY SCHOOLS, we provide a warm, stimulating, and child-friendly environment where every learner feels safe, valued, and inspired to learn.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Our classrooms are well-structured, colorful, and equipped with modern learning materials that promote creativity and active participation. Each child is encouraged to explore, ask questions, and discover new ideas in an atmosphere filled with care and positivity.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We maintain a clean and organized space that supports focus and excellence. From our well-ventilated classrooms to our serene playgrounds, every corner of the school reflects our commitment to quality education and moral upbringing.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
