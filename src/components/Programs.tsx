@@ -56,7 +56,7 @@ export default function Programs() {
                 color: 'from-blue-500 to-blue-600'
               },
               {
-                title: 'High School',
+                title: 'Secondary School',
                 subtitle: 'Grades 9-12',
                 description: 'Advanced coursework and specialized programs preparing students for university and future careers.',
                 color: 'from-orange-500 to-orange-600'
@@ -134,31 +134,6 @@ export default function Programs() {
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Core Subjects</h2>
-            <p className="text-xl text-gray-600">Comprehensive academic foundation for every student</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-            {[
-              { icon: <BookOpen className="w-10 h-10" />, title: 'Language Arts', color: 'bg-blue-100 text-blue-600' },
-              { icon: <Calculator className="w-10 h-10" />, title: 'Mathematics', color: 'bg-emerald-100 text-emerald-600' },
-              { icon: <Beaker className="w-10 h-10" />, title: 'Sciences', color: 'bg-purple-100 text-purple-600' },
-              { icon: <Globe className="w-10 h-10" />, title: 'Social Studies', color: 'bg-orange-100 text-orange-600' },
-              { icon: <Music className="w-10 h-10" />, title: 'Fine Arts', color: 'bg-pink-100 text-pink-600' },
-              { icon: <Trophy className="w-10 h-10" />, title: 'Physical Education', color: 'bg-yellow-100 text-yellow-600' },
-              { icon: <Microscope className="w-10 h-10" />, title: 'Computer Science', color: 'bg-cyan-100 text-cyan-600' },
-              { icon: <Palette className="w-10 h-10" />, title: 'Creative Arts', color: 'bg-rose-100 text-rose-600' }
-            ].map((subject, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
-                <div className={`${subject.color} w-16 h-16 rounded-lg flex items-center justify-center mb-4`}>
-                  {subject.icon}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900">{subject.title}</h3>
-              </div>
-            ))}
           </div>
 
           <div className="space-y-16">
@@ -287,6 +262,68 @@ export default function Programs() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 via-white to-yellow-50 p-10 rounded-3xl shadow-xl">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🎓</span>
+                <h3 className="text-3xl font-bold text-gray-900">Secondary School</h3>
+              </div>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Our program blends academic rigor, creativity, and moral training, giving learners a solid foundation for higher learning and responsible living.
+              </p>
+              <p className="text-lg text-gray-700 font-semibold mb-6">Learners are engaged through:</p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  "Science Department",
+                  "Commercial Department",
+                  "Art Department",
+                  "ICT and Coding – graphics design, animations, web/app building, and problem-solving with technology.",
+                  "Daily Drills",
+                  "Creative Studies – Art, Music, and Drama.",
+                  "Clubs and Societies – Debate, Press Club, Arts & Crafts, STEM Club, and Qur'an Recitation groups.",
+                  "Sports and Games – football, basketball, chess, and indoor games to build fitness and teamwork.",
+                  "Moral and Social Education – instilling values of respect, honesty, and leadership.",
+                  "Entrepreneurship and Practical Life Skills – introducing basic financial literacy, project making, and handiwork.",
+                  "Public Speaking and Reading Culture – weekly presentations, storytelling, and reading programs to build confidence.",
+                  "Field Trips and Excursions – real-world exposure that connects classroom learning to everyday life.",
+                  "Health & Hygiene Education – promoting wellness, safety, and self-care habits."
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start bg-white rounded-2xl border border-orange-100 p-4 shadow-sm">
+                    <span className="text-orange-500 text-xl mr-3">✅</span>
+                    <span className="text-gray-700 leading-relaxed">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-orange-600 font-semibold">
+                By graduation, learners are equipped with strong reading, writing, critical thinking, and problem-solving skills, alongside creativity, moral discipline, and confidence to excel in higher education (University Level).
+              </p>
+
+              <div className="mt-10">
+                <div className="text-center mb-8">
+                  <h4 className="text-3xl font-bold text-gray-900 mb-2">Core Subjects</h4>
+                  <p className="text-lg text-gray-600">Comprehensive academic foundation for every student</p>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {[
+                    { icon: <BookOpen className="w-10 h-10" />, title: 'Language Arts', color: 'bg-blue-100 text-blue-600' },
+                    { icon: <Calculator className="w-10 h-10" />, title: 'Mathematics', color: 'bg-emerald-100 text-emerald-600' },
+                    { icon: <Beaker className="w-10 h-10" />, title: 'Sciences', color: 'bg-purple-100 text-purple-600' },
+                    { icon: <Globe className="w-10 h-10" />, title: 'Social Studies', color: 'bg-orange-100 text-orange-600' },
+                    { icon: <Music className="w-10 h-10" />, title: 'Fine Arts', color: 'bg-pink-100 text-pink-600' },
+                    { icon: <Trophy className="w-10 h-10" />, title: 'Physical Education', color: 'bg-yellow-100 text-yellow-600' },
+                    { icon: <Microscope className="w-10 h-10" />, title: 'Computer Science', color: 'bg-cyan-100 text-cyan-600' },
+                    { icon: <Palette className="w-10 h-10" />, title: 'Creative Arts', color: 'bg-rose-100 text-rose-600' }
+                  ].map((subject, index) => (
+                    <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
+                      <div className={`${subject.color} w-16 h-16 rounded-lg flex items-center justify-center mb-4`}>
+                        {subject.icon}
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900">{subject.title}</h3>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
