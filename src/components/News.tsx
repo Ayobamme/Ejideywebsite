@@ -3,14 +3,38 @@ import { Calendar, User, ArrowRight } from 'lucide-react';
 export default function News() {
   const newsArticles = [
     {
-      title: 'News Flash: Teachers’ Training Spotlight',
+      title: "News Flash: Teachers' Training Spotlight",
       excerpt:
-        'We had our Teachers’ Training today where we focused on the nitty-gritties of effective teaching. At Ejidey Schools, we strongly believe in teaching the teachers and training the trainers because our team is our greatest strength. Happy Teachers’ Day to us all!',
+        "We had our Teachers' Training today where we focused on the nitty-gritties of effective teaching. At Ejidey Schools, we strongly believe in teaching the teachers and training the trainers because our team is our greatest strength. Happy Teachers' Day to us all!",
       date: 'October 7, 2025',
       author: 'Ejidey Schools Newsroom',
       category: 'Professional Development',
       image: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fa20c89ea04c34cfbb447b6d6775da8bf?format=webp&width=1200',
       featured: true
+    },
+    {
+      title: 'EJIDEY Football Club',
+      excerpt: 'At EJIDEY Schools, our Football Club builds teamwork, discipline, and confidence both on and off the field. Learners are trained to play with skill, strategy, and sportsmanship. Through regular practice and inter-house matches, we nurture future champions who understand that winning begins with hard work, respect, and unity.',
+      date: 'October 12, 2025',
+      author: 'Ejidey Schools Newsroom',
+      category: 'Sports',
+      image: 'https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      title: 'EJIDEY ICT and Coding',
+      excerpt: 'At EJIDEY Schools, we prepare our learners for the digital world through hands-on ICT and Coding classes. From an early age, pupils explore technology creatively — learning how to type, design, code, and solve problems using computers. Our program covers essential skills such as graphics design, animation, app building, and robotics.',
+      date: 'October 11, 2025',
+      author: 'Ejidey Schools Newsroom',
+      category: 'Technology',
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      title: 'EJIDEY Home-Makers Club',
+      excerpt: 'At EJIDEY Schools, we believe that education goes beyond the classroom. Our Home Makers Session equips learners with essential life skills that build independence, creativity, and responsibility. During these sessions, pupils engage in practical activities such as cooking, cleaning, sewing, decorating, and basic home management.',
+      date: 'October 10, 2025',
+      author: 'Ejidey Schools Newsroom',
+      category: 'Life Skills',
+      image: 'https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       title: 'Ejidey School Students Win National Science Fair',
