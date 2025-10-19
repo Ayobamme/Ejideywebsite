@@ -29,7 +29,7 @@ export default function News() {
       date: 'October 11, 2025',
       author: 'Ejidey Schools Newsroom',
       category: 'Technology',
-      image: ictCodingImage
+      image: homeMakersImage
     },
     {
       title: 'EJIDEY Home-Makers Club',
@@ -37,7 +37,7 @@ export default function News() {
       date: 'October 10, 2025',
       author: 'Ejidey Schools Newsroom',
       category: 'Life Skills',
-      image: homeMakersImage
+      image: ictCodingImage
     },
     {
       title: 'Ejidey School Students Win National Science Fair',
