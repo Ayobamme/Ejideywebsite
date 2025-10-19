@@ -120,19 +120,6 @@ export default function Admissions({ onStartApplication }: AdmissionsProps) {
             <p className="text-xl text-gray-600">Investing in your child's future</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[
-              { grade: 'Primary (K-5)', tuition: '₦1,200,000' },
-              { grade: 'Middle (6-8)', tuition: '₦1,450,000' },
-              { grade: 'High School (9-12)', tuition: '₦1,650,000' }
-            ].map((tuition, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{tuition.grade}</h3>
-                <p className="text-4xl font-bold text-emerald-600">{tuition.tuition}</p>
-              </div>
-            ))}
-          </div>
-
           <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 p-10 rounded-2xl text-white shadow-xl">
             <h3 className="text-3xl font-bold mb-4">Financial Assistance Available</h3>
             <p className="text-lg text-emerald-50 mb-6">

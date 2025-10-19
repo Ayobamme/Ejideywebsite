@@ -60,30 +60,6 @@ export default function News() {
       category: 'Events',
       image: 'https://images.pexels.com/photos/8923128/pexels-photo-8923128.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
-    {
-      title: 'Ejidey School Ranked Top 10 in Regional Education',
-      excerpt: 'According to the latest educational rankings, Ejidey School has been recognized among the top 10 schools in the region for academic excellence.',
-      date: 'February 28, 2024',
-      author: 'Dr. Sarah Johnson',
-      category: 'Achievement',
-      image: 'https://images.pexels.com/photos/8923165/pexels-photo-8923165.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'Community Service Day Makes Impact',
-      excerpt: 'Students and staff volunteered over 500 hours in community service projects, making a positive difference in our local community.',
-      date: 'February 20, 2024',
-      author: 'Michael Chen',
-      category: 'Community',
-      image: 'https://images.pexels.com/photos/8923194/pexels-photo-8923194.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'Athletic Teams Excel in Regional Championships',
-      excerpt: 'Our basketball, soccer, and track teams all advanced to regional championships, with several students earning individual awards.',
-      date: 'February 15, 2024',
-      author: 'Emily Rodriguez',
-      category: 'Sports',
-      image: 'https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg?auto=compress&cs=tinysrgb&w=800'
-    }
   ];
 
   const featuredArticle = newsArticles.find(article => article.featured);

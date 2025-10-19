@@ -38,6 +38,12 @@ export default function Programs() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             {[
               {
+                title: 'Nursery Session',
+                subtitle: 'Ages 2-4 years',
+                description: 'Early learning foundation that prepares young children for formal education through play-based activities and social development.',
+                color: 'from-purple-500 to-purple-600'
+              },
+              {
                 title: 'Based Crèche',
                 subtitle: 'Ages 3 months - 3 years',
                 description: 'Nurturing early learners with structured play, sensory exploration, and caring supervision in a homely environment.',
@@ -392,7 +398,7 @@ export default function Programs() {
               },
               {
                 category: 'Clubs & Organizations',
-                activities: ['Student Government', 'Debate Team', 'Science Club', 'Drama Society', 'Environmental Club', 'Chess Club']
+                activities: ['Student Government', 'Debate Team', 'Science Club', 'Drama Society', 'Home-Makers Club', 'Chess Club']
               },
               {
                 category: 'Arts & Performance',

@@ -79,8 +79,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600">
-                      info@ejideyschools.com<br />
-                      admissions@ejideyschools.com
+                      info@ejideychools.ng<br />
+                      admissions@ejideychools.ng
                     </p>
                   </div>
                 </div>
@@ -100,15 +100,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 p-8 rounded-xl text-white shadow-xl">
-                <h3 className="text-2xl font-bold mb-4">Schedule a Campus Tour</h3>
-                <p className="text-emerald-50 mb-6">
-                  Experience Ejidey Schools firsthand! Schedule a personalized tour of our campus and facilities.
-                </p>
-                <button className="bg-white text-emerald-600 font-semibold px-6 py-3 rounded-lg hover:bg-emerald-50 transition-colors">
-                  Book a Tour
-                </button>
-              </div>
             </div>
 
             <div>
