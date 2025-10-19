@@ -1,3 +1,6 @@
+import scienceLabImage from '../assets/science-lab.jpeg';
+import footballClubImage from '../assets/football-club.jpeg';
+
 export default function Gallery() {
   const galleryImages = [
     {
@@ -254,7 +257,7 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F87a855bd8e94446a919c43279bddbf1f?format=webp&width=1200"
+                src={footballClubImage}
                 alt="Indoor activity space"
                 className="w-full h-64 object-cover"
               />
@@ -282,7 +285,7 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd9dce6734c0847bf82efd8e31f03fe0d?format=webp&width=1200"
+                src={scienceLabImage}
                 alt="Science laboratory equipment"
                 className="w-full h-64 object-cover"
               />

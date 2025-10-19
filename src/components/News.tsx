@@ -1,4 +1,7 @@
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import footballClubImage from '../assets/football-club.jpeg';
+import ictCodingImage from '../assets/ict-coding.jpeg';
+import homeMakersImage from '../assets/home-makers.jpeg';
 
 export default function News() {
   const newsArticles = [
@@ -18,7 +21,7 @@ export default function News() {
       date: 'October 12, 2025',
       author: 'Ejidey Schools Newsroom',
       category: 'Sports',
-      image: 'https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: footballClubImage
     },
     {
       title: 'EJIDEY ICT and Coding',
@@ -26,7 +29,7 @@ export default function News() {
       date: 'October 11, 2025',
       author: 'Ejidey Schools Newsroom',
       category: 'Technology',
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: ictCodingImage
     },
     {
       title: 'EJIDEY Home-Makers Club',
@@ -34,7 +37,7 @@ export default function News() {
       date: 'October 10, 2025',
       author: 'Ejidey Schools Newsroom',
       category: 'Life Skills',
-      image: 'https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: homeMakersImage
     },
     {
       title: 'Ejidey School Students Win National Science Fair',
