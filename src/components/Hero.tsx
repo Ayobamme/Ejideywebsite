@@ -1,22 +1,21 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, BookOpen, Users, Award } from 'lucide-react';
+import heroImage1 from '../assets/hero1.jpeg';
+import heroImage2 from '../assets/hero2.jpeg';
+import heroImage3 from '../assets/hero3.jpeg';
 
 const heroImages = [
   {
-    src: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F25aa5d9b69d44937aebc6971a8fea345?format=webp&width=1600',
-    alt: 'Vibrant classroom filled with learning resources'
+    src: heroImage1,
+    alt: 'Ejidey Schools Magodo campus'
   },
   {
-    src: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F6923c5663f82499aa66a9fe38a159816?format=webp&width=1600',
-    alt: 'Students exploring science materials'
+    src: heroImage2,
+    alt: 'Students learning at Ejidey Schools'
   },
   {
-    src: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F87a855bd8e94446a919c43279bddbf1f?format=webp&width=1600',
-    alt: 'Welcome back to school classroom setup'
-  },
-  {
-    src: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd9dce6734c0847bf82efd8e31f03fe0d?format=webp&width=1600',
-    alt: 'Science laboratory equipment display'
+    src: heroImage3,
+    alt: 'Ejidey Schools facilities'
   }
 ];
 
