@@ -142,7 +142,7 @@ export default function About() {
                 <img
                   src={leader.image}
                   alt={leader.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-72 object-fill"
                 />
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">{leader.name}</h3>
