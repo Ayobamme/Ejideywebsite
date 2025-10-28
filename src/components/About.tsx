@@ -123,19 +123,19 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: 'Dr. Sarah Johnson',
-                role: 'Principal',
-                image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400'
+                name: 'Alhaja Rasheedat Ejidey Ogunbadejo',
+                role: 'Founder',
+                image: '/images/founder.jpeg'
               },
               {
-                name: 'Mr. Michael Chen',
-                role: 'Vice Principal',
-                image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400'
+                name: 'MRS B. A UMORU',
+                role: 'Director',
+                image: '/images/director.jpeg'
               },
               {
-                name: 'Ms. Emily Rodriguez',
-                role: 'Academic Director',
-                image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400'
+                name: 'Mrs Lawal',
+                role: 'Head of Primary School',
+                image: '/images/academic-director.jpeg'
               }
             ].map((leader, index) => (
               <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
