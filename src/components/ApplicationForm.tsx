@@ -240,11 +240,15 @@ export default function ApplicationForm({ setActiveSection }: ApplicationFormPro
           status: 'pending'
         })
         .select()
-        .single();
+        .maybeSingle();
 
       if (applicationError) {
         console.error('Application error:', applicationError);
-        throw new Error('Failed to create application');
+        throw new Error(`Failed to create application: ${applicationError.message}`);
+      }
+
+      if (!applicationData) {
+        throw new Error('No application data returned from database');
       }
 
       const applicationId = applicationData.id;
@@ -330,7 +334,8 @@ export default function ApplicationForm({ setActiveSection }: ApplicationFormPro
       }, 1500);
     } catch (error) {
       console.error('Submission error:', error);
-      alert('Failed to submit application. Please try again or contact support.');
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert(`Failed to submit application: ${errorMessage}. Please try again or contact support.`);
     } finally {
       setIsSubmitting(false);
       setUploadProgress('');
