@@ -90,20 +90,17 @@ export default function Admissions({ onStartApplication }: AdmissionsProps) {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Important Dates</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Important Information</h2>
               <div className="space-y-6">
                 {[
-                  { date: 'November 1', event: 'Application Period Opens', color: 'bg-blue-100 text-blue-700' },
-                  { date: 'January 15', event: 'Application Deadline (Early Decision)', color: 'bg-emerald-100 text-emerald-700' },
-                  { date: 'February 28', event: 'Final Application Deadline', color: 'bg-orange-100 text-orange-700' },
-                  { date: 'March 31', event: 'Admission Decisions Released', color: 'bg-purple-100 text-purple-700' },
-                  { date: 'April 30', event: 'Enrollment Confirmation Deadline', color: 'bg-rose-100 text-rose-700' },
-                  { date: 'August 15', event: 'Academic Year Begins', color: 'bg-emerald-100 text-emerald-700' }
+                  { event: 'Application Period Opens', color: 'bg-blue-100 text-blue-700' },
+                  { event: 'Application Deadline (Early Decision)', color: 'bg-emerald-100 text-emerald-700' },
+                  { event: 'Final Application Deadline', color: 'bg-orange-100 text-orange-700' },
+                  { event: 'Admission Decisions Released', color: 'bg-purple-100 text-purple-700' },
+                  { event: 'Enrollment Confirmation Deadline', color: 'bg-rose-100 text-rose-700' },
+                  { event: 'Academic Year Begins', color: 'bg-emerald-100 text-emerald-700' }
                 ].map((item, index) => (
                   <div key={index} className="bg-white border-l-4 border-emerald-600 p-4 rounded-r-lg shadow-md">
-                    <div className={`inline-block px-3 py-1 rounded-full text-sm font-semibold mb-2 ${item.color}`}>
-                      {item.date}
-                    </div>
                     <h3 className="text-lg font-bold text-gray-900">{item.event}</h3>
                   </div>
                 ))}

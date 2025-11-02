@@ -38,14 +38,8 @@ export default function Programs() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             {[
               {
-                title: 'Nursery Session',
-                subtitle: 'Ages 2-4 years',
-                description: 'Early learning foundation that prepares young children for formal education through play-based activities and social development.',
-                color: 'from-purple-500 to-purple-600'
-              },
-              {
                 title: 'Based Crèche',
-                subtitle: 'Ages 3 months - 3 years',
+                subtitle: 'Early Learning',
                 description: 'Nurturing early learners with structured play, sensory exploration, and caring supervision in a homely environment.',
                 color: 'from-rose-500 to-pink-500'
               },
@@ -56,14 +50,20 @@ export default function Programs() {
                 color: 'from-emerald-500 to-emerald-600'
               },
               {
+                title: 'Nursery Session',
+                subtitle: 'Foundation Stage',
+                description: 'Early learning foundation that prepares young children for formal education through play-based activities and social development.',
+                color: 'from-purple-500 to-purple-600'
+              },
+              {
                 title: 'Primary School',
-                subtitle: 'Grades K-5',
+                subtitle: 'Elementary Education',
                 description: 'Building strong foundations in literacy, numeracy, and social skills through engaging, age-appropriate activities.',
                 color: 'from-blue-500 to-blue-600'
               },
               {
                 title: 'Secondary School',
-                subtitle: 'Grades 9-12',
+                subtitle: 'Advanced Education',
                 description: 'Advanced coursework and specialized programs preparing students for university and future careers.',
                 color: 'from-orange-500 to-orange-600'
               }
