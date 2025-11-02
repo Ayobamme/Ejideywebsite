@@ -1,6 +1,6 @@
 import { BookOpen, Beaker, Music, Trophy, Globe, Calculator, Palette, Microscope, Zap } from 'lucide-react';
-import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.32.jpeg';
-import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.32 (1).jpeg';
+import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.23.jpeg';
+import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.22.jpeg';
 import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
 
 const eyfImages = [
@@ -89,7 +89,7 @@ export default function Programs() {
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Play, Learn, and Grow Together</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                We provide a safe, stimulating, and loving environment where every child learns through play and structured activities. Our dedicated caregivers focus on early development milestones while embracing each child’s individuality.
+                We provide a safe, stimulating, and loving environment where every child learns through play and structured activities. Our dedicated caregivers focus on early development milestones while embracing each child's individuality.
               </p>
               <ul className="space-y-3 text-gray-700">
                 {[
@@ -111,7 +111,7 @@ export default function Programs() {
                   },
                   {
                     icon: '✨',
-                    text: 'Qur’an Listening – developing spiritual connection from an early age.'
+                    text: "Qur'an Listening – developing spiritual connection from an early age."
                   },
                   {
                     icon: '✨',
@@ -238,11 +238,11 @@ export default function Programs() {
               </p>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  'Core Subjects – English, Mathematics, Science, Social Studies, Arabic, and Qur’an.',
+                  "Core Subjects – English, Mathematics, Science, Social Studies, Arabic, and Qur'an.",
                   'ICT and Coding (from age 7) – graphics design, animations, web/app building, and technology problem-solving.',
                   'Daily Drills – spelling, comprehension, handwriting, dictation, and mental maths to sharpen academic skills.',
                   'Creative Studies – Art, Music, Drama, and Home Economics to encourage innovation and self-expression.',
-                  'Clubs and Societies – Debate, Press Club, Arts & Crafts, STEM Club, and Qur’an Recitation groups.',
+                  "Clubs and Societies – Debate, Press Club, Arts & Crafts, STEM Club, and Qur'an Recitation groups.",
                   'Sports and Games – football, basketball, chess, and indoor games to build fitness and teamwork.',
                   'Moral and Social Education – instilling values of respect, honesty, and leadership.',
                   'Entrepreneurship and Practical Life Skills – introducing basic financial literacy, project making, and handiwork.',
