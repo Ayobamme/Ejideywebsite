@@ -116,33 +116,147 @@ export default function Admissions({ onStartApplication }: AdmissionsProps) {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Tuition & Financial Aid</h2>
-            <p className="text-xl text-gray-600">Investing in your child's future</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Admission Policy</h2>
+            <p className="text-xl text-gray-600">Requirements and criteria for joining our community</p>
           </div>
 
-          <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 p-10 rounded-2xl text-white shadow-xl">
-            <h3 className="text-3xl font-bold mb-4">Financial Assistance Available</h3>
-            <p className="text-lg text-emerald-50 mb-6">
-              We believe that exceptional education should be accessible to all qualified students. Ejidey School offers need-based financial aid and merit scholarships to deserving families.
-            </p>
-            <ul className="grid md:grid-cols-2 gap-4 mb-6">
-              {[
-                'Need-based financial aid up to 50% tuition',
-                'Academic merit scholarships',
-                'Sibling discount (15% for 2nd child, 20% for 3rd+)',
-                'Flexible payment plans available',
-                'Early payment discount (5%)',
-                'Staff and military family discounts'
-              ].map((benefit, index) => (
-                <li key={index} className="flex items-start">
-                  <CheckCircle className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" />
-                  <span>{benefit}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-emerald-50">
-              Contact our admissions office to learn more about financial aid opportunities and to request an application.
-            </p>
+          <div className="space-y-8">
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Entry into JS1 (Junior Secondary 1)</h3>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" />
+                  <p className="text-gray-700">The candidate must be 10 years old by the month of the admission exercise</p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" />
+                  <p className="text-gray-700">The candidate must have completed grade 11 or Primary 6 or Primary 5 at their previous school</p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" />
+                  <p className="text-gray-700">A testimonial from the previous school will be required</p>
+                </div>
+              </div>
+              <div className="bg-emerald-50 rounded-xl p-6 border border-emerald-100">
+                <h4 className="font-bold text-gray-900 mb-3">JS1 Applicants will be tested in:</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+                    Mathematics / Quantitative Aptitudes
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+                    English / Verbal Aptitudes
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></span>
+                    General Paper
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-2xl shadow-xl p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Transfer Students into JS2, JS3 & SS1</h3>
+                <div className="mb-4">
+                  <div className="flex items-start mb-3">
+                    <CheckCircle className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                    <p className="text-gray-700">A testimonial from the previous school will be required</p>
+                  </div>
+                </div>
+                <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                  <h4 className="font-bold text-gray-900 mb-3">Will be tested in:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                      English
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                      Mathematics
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                      Basic Science
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-xl p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Transfer Students into SS2</h3>
+                <div className="mb-4">
+                  <div className="flex items-start mb-3">
+                    <CheckCircle className="w-5 h-5 text-orange-600 mt-1 mr-3 flex-shrink-0" />
+                    <p className="text-gray-700">A testimonial from the previous school will be required</p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-orange-50 rounded-xl p-6 border border-orange-100">
+                    <h4 className="font-bold text-gray-900 mb-3">Art & Commercial Classes:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-center text-gray-700">
+                        <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+                        English
+                      </li>
+                      <li className="flex items-center text-gray-700">
+                        <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+                        Mathematics
+                      </li>
+                      <li className="flex items-center text-gray-700">
+                        <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+                        Government / Economics
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-rose-50 rounded-xl p-6 border border-rose-100">
+                    <h4 className="font-bold text-gray-900 mb-3">Sciences:</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-center text-gray-700">
+                        <span className="w-2 h-2 bg-rose-600 rounded-full mr-3"></span>
+                        English
+                      </li>
+                      <li className="flex items-center text-gray-700">
+                        <span className="w-2 h-2 bg-rose-600 rounded-full mr-3"></span>
+                        Mathematics
+                      </li>
+                      <li className="flex items-center text-gray-700">
+                        <span className="w-2 h-2 bg-rose-600 rounded-full mr-3"></span>
+                        Chemistry
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl shadow-xl p-10 text-white">
+              <h3 className="text-3xl font-bold mb-6">What We Look For</h3>
+              <p className="text-lg text-emerald-50 mb-6">
+                The school aims to provide a broad and balanced range of quality learning opportunities within a day/boarding school environment, in a natural and peaceful setting, which is conducive to learning.
+              </p>
+              <p className="text-lg text-emerald-50 mb-6">
+                We look for evidence of a young person's willingness to succeed at Ejidey Schools. We look at the whole child, paying particular attention to:
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  'A passion for learning',
+                  'Intellect, evidenced by a history of academic success',
+                  'Ability to adjust',
+                  'Respect for others',
+                  'Self-discipline',
+                  'Sporting ability',
+                  'Ability in creative arts',
+                  'Leadership skills'
+                ].map((quality, index) => (
+                  <div key={index} className="flex items-start">
+                    <CheckCircle className="w-5 h-5 mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-emerald-50">{quality}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
