@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { useState } from 'react';
+import { supabase } from '../lib/supabase';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,11 +10,24 @@ export default function Contact() {
     subject: '',
     message: ''
   });
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for contacting us! We will get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    setSubmitting(true);
+
+    const { error } = await supabase
+      .from('contact_messages')
+      .insert([formData]);
+
+    if (error) {
+      alert('There was an error sending your message. Please try again.');
+    } else {
+      alert('Thank you for contacting us! We will get back to you soon.');
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    }
+
+    setSubmitting(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -119,7 +133,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                      placeholder="John Doe"
+                      placeholder="Your full name"
                     />
                   </div>
 
@@ -135,7 +149,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                      placeholder="john@example.com"
+                      placeholder="your.email@example.com"
                     />
                   </div>
 
@@ -150,7 +164,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+234 XXX XXX XXXX"
                     />
                   </div>
 
@@ -194,9 +208,10 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-emerald-600 text-white font-semibold px-6 py-4 rounded-lg hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center"
+                    disabled={submitting}
+                    className="w-full bg-emerald-600 text-white font-semibold px-6 py-4 rounded-lg hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {submitting ? 'Sending...' : 'Send Message'}
                     <Send className="ml-2 w-5 h-5" />
                   </button>
                 </form>

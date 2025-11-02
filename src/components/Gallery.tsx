@@ -29,114 +29,14 @@ export default function Gallery() {
       category: 'Events'
     },
     {
-      url: 'https://images.pexels.com/photos/8923165/pexels-photo-8923165.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Library Study',
-      category: 'Academic'
-    },
-    {
-      url: 'https://images.pexels.com/photos/8923194/pexels-photo-8923194.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Sports Activities',
-      category: 'Sports'
-    },
-    {
-      url: 'https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Group Learning',
-      category: 'Academic'
-    },
-    {
-      url: 'https://images.pexels.com/photos/8923123/pexels-photo-8923123.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'School Events',
-      category: 'Events'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fc70c8deca1fa49d7b50db5d60c372525?format=webp&width=800',
-      title: 'Creative Learning Nook',
-      category: 'Based Crèche'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Ff8de39ce56534cc1b0d91f04ac9906bf?format=webp&width=800',
-      title: 'Restful Nap Time Space',
-      category: 'Based Crèche'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd7f889c90e3b47d0a94703c08eb620fa?format=webp&width=800',
-      title: 'Interactive Learning Corners',
-      category: 'Based Crèche'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F28218b43e263468fbf8e40aeb03fe176?format=webp&width=800',
-      title: 'Play-Based Activity Zone',
-      category: 'Based Crèche'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd9dce6734c0847bf82efd8e31f03fe0d?format=webp&width=800',
-      title: 'Science Models Display',
+      url: scienceLabImage,
+      title: 'Science Laboratory',
       category: 'STEM'
     },
     {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F6923c5663f82499aa66a9fe38a159816?format=webp&width=800',
-      title: 'Geology Exhibit',
-      category: 'Academic'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F54d8b78d223943b392ce697d6e922068?format=webp&width=800',
-      title: 'Discovery Corner',
-      category: 'Early Years'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F50e0200d838b4063b4daf97b3ee5505d?format=webp&width=800',
-      title: 'EYF Creative Classroom',
-      category: 'EYF'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F0ffd7b12a88a489993fc53394fdf26eb?format=webp&width=800',
-      title: 'Nursery Activity Shelves',
-      category: 'Nursery'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F8bb6cec890b347a981064329c77ced3f?format=webp&width=800',
-      title: 'Colourful Ceiling Decor',
-      category: 'Nursery'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Ffd1165ea0e69465c8db172db8c95af96?format=webp&width=800',
-      title: 'Learning Corners',
-      category: 'Nursery'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F9e22348f41e74c17ba5e7db3827c188c?format=webp&width=800',
-      title: 'Interactive Nursery Space',
-      category: 'Nursery'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe342084ff10d4892aa3fb28776971bd0?format=webp&width=800',
-      title: 'STEM Resource Hub',
-      category: 'Primary'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F25aa5d9b69d44937aebc6971a8fea345?format=webp&width=800',
-      title: 'Classroom Displays',
-      category: 'Primary'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F9067e61d32504b7196b66a51dc9b087f?format=webp&width=800',
-      title: 'Reading Corner',
-      category: 'Primary'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fda142d003da044748c5d5ca892062186?format=webp&width=800',
-      title: 'Collaborative Learning Area',
-      category: 'Primary'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe20fc5c1001944808a53828c1ae234a0?format=webp&width=800',
-      title: 'Motivational Classroom',
-      category: 'Primary'
-    },
-    {
-      url: 'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F87a855bd8e94446a919c43279bddbf1f?format=webp&width=800',
-      title: 'Welcome Back Setup',
-      category: 'Primary'
+      url: footballClubImage,
+      title: 'Sports Activities',
+      category: 'Sports'
     }
   ];
 
@@ -152,7 +52,7 @@ export default function Gallery() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {['All', 'Academic', 'Arts', 'Sports', 'Facilities', 'Events', 'Technology', 'Based Crèche', 'Nursery', 'EYF', 'Primary', 'STEM'].map((category) => (
+            {['All', 'Academic', 'Sports', 'Facilities', 'Events', 'Technology', 'STEM'].map((category) => (
               <button
                 key={category}
                 className={`px-6 py-2 rounded-full font-semibold transition-colors ${
@@ -201,7 +101,7 @@ export default function Gallery() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F25aa5d9b69d44937aebc6971a8fea345?format=webp&width=1200"
+                src="/images/ejidey 1.jpg"
                 alt="Ejidey classroom interior"
                 className="w-full h-64 object-cover"
               />
@@ -229,7 +129,7 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fe342084ff10d4892aa3fb28776971bd0?format=webp&width=1200"
+                src="/images/ejidey 3.jpg"
                 alt="Ejidey resource shelves"
                 className="w-full h-64 object-cover"
               />
@@ -269,15 +169,15 @@ export default function Gallery() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center">
                     <span className="text-emerald-600 mr-2">✓</span>
-                    Olympic-size swimming pool
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-emerald-600 mr-2">✓</span>
                     Multi-sport gymnasium
                   </li>
                   <li className="flex items-center">
                     <span className="text-emerald-600 mr-2">✓</span>
                     Outdoor playing fields
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Sports equipment and facilities
                   </li>
                 </ul>
               </div>
