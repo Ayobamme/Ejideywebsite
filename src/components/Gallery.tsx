@@ -1,8 +1,5 @@
 import scienceLabImage from '../assets/science-lab.jpeg';
 import footballClubImage from '../assets/football-club.jpeg';
-import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.32.jpeg';
-import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.32 (1).jpeg';
-import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
 
 export default function Gallery() {
   const galleryImages = [
@@ -40,21 +37,6 @@ export default function Gallery() {
       url: footballClubImage,
       title: 'Sports Activities',
       category: 'Sports'
-    },
-    {
-      url: eyfImage1,
-      title: 'Early Years Foundation',
-      category: 'Facilities'
-    },
-    {
-      url: eyfImage2,
-      title: 'Nursery Classroom',
-      category: 'Academic'
-    },
-    {
-      url: eyfImage3,
-      title: 'Learning Through Play',
-      category: 'Facilities'
     }
   ];
 

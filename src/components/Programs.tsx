@@ -1,12 +1,10 @@
 import { BookOpen, Beaker, Music, Trophy, Globe, Calculator, Palette, Microscope, Zap } from 'lucide-react';
-import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.32.jpeg';
-import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.32 (1).jpeg';
-import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
 
 const eyfImages = [
-  eyfImage1,
-  eyfImage2,
-  eyfImage3
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2Fd9dce6734c0847bf82efd8e31f03fe0d?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F6923c5663f82499aa66a9fe38a159816?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F54d8b78d223943b392ce697d6e922068?format=webp&width=800',
+  'https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F50e0200d838b4063b4daf97b3ee5505d?format=webp&width=800'
 ];
 
 const nurseryImages = [

@@ -1,6 +1,10 @@
 import { Calendar, FileText, Users, CheckCircle, Phone, Mail } from 'lucide-react';
 
-export default function Admissions() {
+interface AdmissionsProps {
+  onStartApplication: () => void;
+}
+
+export default function Admissions({ onStartApplication }: AdmissionsProps) {
   return (
     <div className="pt-20 bg-white">
       <section className="py-20 bg-gradient-to-br from-emerald-50 via-white to-blue-50">
@@ -281,9 +285,15 @@ export default function Admissions() {
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-gray-200 text-center">
-              <p className="text-gray-600">
-                For application inquiries, please contact us via phone or email
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <button
+                onClick={onStartApplication}
+                className="w-full bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl"
+              >
+                Start Your Application Online
+              </button>
+              <p className="text-center text-gray-600 mt-4 text-sm">
+                Application takes approximately 15-20 minutes to complete
               </p>
             </div>
           </div>
