@@ -3,7 +3,6 @@ import { Calendar, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import footballClubImage from '../assets/football-club.jpeg';
 import ictCodingImage from '../assets/ict-coding.jpeg';
 import homeMakersImage from '../assets/home-makers.jpeg';
-import teachersTrainingImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.23.jpeg';
 
 export default function News() {
   const [expandedNews, setExpandedNews] = useState<number | null>(null);
@@ -16,7 +15,7 @@ export default function News() {
       fullContent: "We had our Teachers' Training today where we focused on the nitty-gritties of effective teaching. At Ejidey Schools, we strongly believe in teaching the teachers and training the trainers because our team is our greatest strength. Our professional development program ensures that our educators stay at the forefront of modern teaching methodologies, incorporating the latest educational research and best practices. Through continuous training and development, we maintain our commitment to excellence in education. Happy Teachers' Day to us all!",
       date: 'October 7, 2025',
       category: 'Professional Development',
-      image: teachersTrainingImage,
+      image: '/images/ejidey 1.jpg',
       featured: true
     },
     {
