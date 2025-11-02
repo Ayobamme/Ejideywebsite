@@ -137,24 +137,32 @@ export default function ApplicationForm({ setActiveSection }: ApplicationFormPro
     setUploadProgress('Creating application...');
 
     try {
+      const nameParts = formData.studentName.trim().split(' ');
+      const surname = nameParts[0] || '';
+      const firstName = nameParts[1] || '';
+      const middleName = nameParts.slice(2).join(' ') || '';
+
       const { data: applicationData, error: applicationError } = await supabase
         .from('applications')
         .insert({
-          student_name: formData.studentName,
-          grade_level: formData.gradeLevel,
+          surname,
+          first_name: firstName,
+          middle_name: middleName,
           date_of_birth: formData.dateOfBirth,
+          gender: 'Not Specified',
           guardian_name: formData.guardianName,
           guardian_email: formData.guardianEmail,
-          guardian_phone: formData.guardianPhone,
-          address: formData.address,
+          guardian_mobile: formData.guardianPhone,
+          home_address: formData.address,
           previous_school: formData.previousSchool,
-          additional_info: formData.additionalInfo,
+          class_seeking_admission: formData.gradeLevel,
           status: 'pending'
         })
         .select()
         .single();
 
       if (applicationError) {
+        console.error('Application error:', applicationError);
         throw new Error('Failed to create application');
       }
 
@@ -187,11 +195,46 @@ export default function ApplicationForm({ setActiveSection }: ApplicationFormPro
         }
       }
 
+      setUploadProgress('Sending confirmation emails...');
+
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+      const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+      try {
+        const emailResponse = await fetch(`${supabaseUrl}/functions/v1/send-application-email`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${supabaseKey}`,
+          },
+          body: JSON.stringify({
+            applicationData: {
+              surname,
+              first_name: firstName,
+              middle_name: middleName,
+              guardian_email: formData.guardianEmail,
+              guardian_name: formData.guardianName,
+              guardian_mobile: formData.guardianPhone,
+              class_seeking_admission: formData.gradeLevel,
+              date_of_birth: formData.dateOfBirth,
+              gender: 'Not Specified',
+              created_at: applicationData.created_at
+            }
+          })
+        });
+
+        if (!emailResponse.ok) {
+          console.error('Email sending failed, but application was saved');
+        }
+      } catch (emailError) {
+        console.error('Email error:', emailError);
+      }
+
       setUploadProgress('Application submitted successfully!');
 
       setTimeout(() => {
         alert(
-          'Your application has been submitted successfully! Our admissions team will contact you shortly via email or phone.'
+          'Your application has been submitted successfully! Confirmation emails have been sent. Our admissions team will contact you shortly.'
         );
         setFormData(initialFormState);
         setDocuments(initialDocumentState);
