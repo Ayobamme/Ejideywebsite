@@ -50,12 +50,12 @@ export default function Gallery() {
       category: 'Facilities'
     },
     {
-      url: eyfImage2,
+      url: '/images/WhatsApp Image 2025-11-02 at 21.15.10.jpeg',
       title: 'Nursery Classroom',
       category: 'Academic'
     },
     {
-      url: '/images/WhatsApp Image 2025-11-02 at 21.15.10.jpeg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.41.52.jpeg',
       title: 'Learning Through Play',
       category: 'Facilities'
     }
