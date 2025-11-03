@@ -280,7 +280,7 @@ export default function Programs() {
               <div className="mb-10">
                 <h4 className="text-2xl font-bold text-gray-900 mb-4">Curriculum (JS1 to JS3)</h4>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  Landmark College secondary school in Lagos offers a combination of the Nigerian and British National Curriculum. In total, 15 subject areas are covered at Key Stage 3 (JS1 to JS3):
+                  Ejidey Secondary School in Lagos offers a combination of the Nigerian and British National Curriculum. In total, 15 subject areas are covered at Key Stage 3 (JS1 to JS3):
                 </p>
                 <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-3">
                   {[
