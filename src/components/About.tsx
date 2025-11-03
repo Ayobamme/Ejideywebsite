@@ -1,4 +1,5 @@
 import { Target, Eye, Heart, Trophy } from 'lucide-react';
+import schoolBuildingImage from '../assets/WhatsApp Image 2025-11-02 at 20.16.02.jpeg';
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <img
-                src="/images/ejidey 3.jpg"
+                src={schoolBuildingImage}
                 alt="School building"
                 className="rounded-2xl shadow-2xl"
               />
