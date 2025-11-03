@@ -10,7 +10,7 @@ import eyfPlayroomImage from '../assets/WhatsApp Image 2025-11-02 at 20.46.59 co
 export default function Gallery() {
   const galleryImages = [
     {
-      url: '/images/ejidey 1.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.21.12.jpeg',
       title: 'Students in Classroom',
       category: 'Academic'
     },
