@@ -3,7 +3,7 @@ import { Calendar, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import footballClubImage from '../assets/football-club.jpeg';
 import ictCodingImage from '../assets/ict-coding.jpeg';
 import homeMakersImage from '../assets/home-makers.jpeg';
-import teachersTrainingImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.23.jpeg';
+import teachersTrainingImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.22 copy.jpeg';
 
 export default function News() {
   const [expandedNews, setExpandedNews] = useState<number | null>(null);
