@@ -150,7 +150,7 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/images/ejidey 3.jpg"
+                src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Ejidey resource shelves"
                 className="w-full h-64 object-cover"
               />
