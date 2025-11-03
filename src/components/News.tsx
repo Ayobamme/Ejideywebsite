@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Calendar, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import footballClubImage from '../assets/football-club.jpeg';
-import ictCodingImage from '../assets/ict-coding.jpeg';
-import homeMakersImage from '../assets/home-makers.jpeg';
+import computerLabImage from '../assets/WhatsApp Image 2025-10-12 at 03.58.17.jpeg';
+import cookingImage from '../assets/WhatsApp Image 2025-11-02 at 20.38.28.jpeg';
 import teachersTrainingImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.22 copy.jpeg';
 
 export default function News() {
@@ -33,7 +33,7 @@ export default function News() {
       fullContent: 'At EJIDEY Schools, we prepare our learners for the digital world through hands-on ICT and Coding classes. From an early age, pupils explore technology creatively — learning how to type, design, code, and solve problems using computers. Our program covers essential skills such as graphics design, animation, app building, and robotics. Students engage with cutting-edge technology and software, developing computational thinking skills that are essential for success in the modern world. Through project-based learning, they create real-world solutions while building confidence in their digital literacy.',
       date: 'October 11, 2025',
       category: 'Technology',
-      image: ictCodingImage
+      image: computerLabImage
     },
     {
       title: 'EJIDEY Home-Makers Club',
@@ -41,7 +41,7 @@ export default function News() {
       fullContent: 'At EJIDEY Schools, we believe that education goes beyond the classroom. Our Home Makers Session equips learners with essential life skills that build independence, creativity, and responsibility. During these sessions, pupils engage in practical activities such as cooking, cleaning, sewing, decorating, and basic home management. These hands-on experiences help students develop practical wisdom and self-sufficiency, preparing them to become well-rounded individuals capable of managing their own homes and contributing meaningfully to their families and communities.',
       date: 'October 10, 2025',
       category: 'Life Skills',
-      image: homeMakersImage
+      image: cookingImage
     }
   ];
 
