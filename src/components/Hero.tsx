@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, BookOpen, Users, Award } from 'lucide-react';
-import heroImage1 from '../assets/hero1.jpeg';
-import heroImage2 from '../assets/hero2.jpeg';
-import heroImage3 from '../assets/hero3.jpeg';
+import heroImage1 from '../assets/WhatsApp Image 2025-11-02 at 20.38.28.jpeg';
+import heroImage2 from '../assets/WhatsApp Image 2025-11-02 at 20.35.38.jpeg';
+import heroImage3 from '../assets/WhatsApp Image 2025-11-02 at 20.38.03.jpeg';
+import heroImage4 from '../assets/WhatsApp Image 2025-11-02 at 20.35.38 (1).jpeg';
 
 const heroImages = [
   {
@@ -15,7 +16,11 @@ const heroImages = [
   },
   {
     src: heroImage3,
-    alt: 'Ejidey Schools facilities'
+    alt: 'Ejidey Schools student'
+  },
+  {
+    src: heroImage4,
+    alt: 'Ejidey Schools staff'
   }
 ];
 
