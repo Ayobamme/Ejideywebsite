@@ -3,6 +3,7 @@ import footballClubImage from '../assets/football-club.jpeg';
 import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.23.jpeg';
 import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.22.jpeg';
 import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
+import modernClassroomImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.28.jpeg';
 
 export default function Gallery() {
   const galleryImages = [
@@ -119,7 +120,7 @@ export default function Gallery() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/images/ejidey 1.jpg"
+                src={modernClassroomImage}
                 alt="Ejidey classroom interior"
                 className="w-full h-64 object-cover"
               />
