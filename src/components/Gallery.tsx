@@ -15,7 +15,7 @@ export default function Gallery() {
       category: 'Academic'
     },
     {
-      url: '/images/ejidey 3.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.43.11.jpeg',
       title: 'Learning Environment',
       category: 'Academic'
     },
