@@ -94,6 +94,14 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
                 {item.label}
               </button>
             ))}
+            <a
+              href="https://skoolbod.net/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center px-4 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-semibold text-sm"
+            >
+              Portal Login
+            </a>
           </nav>
         </div>
       )}
