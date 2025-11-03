@@ -4,6 +4,7 @@ import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.23.jpeg';
 import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.22.jpeg';
 import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
 import modernClassroomImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.28.jpeg';
+import computerLabImage from '../assets/WhatsApp Image 2025-10-12 at 03.58.17.jpeg';
 
 export default function Gallery() {
   const galleryImages = [
@@ -23,7 +24,7 @@ export default function Gallery() {
       category: 'Facilities'
     },
     {
-      url: '/images/ejidey 5.jpg',
+      url: computerLabImage,
       title: 'Computer Lab',
       category: 'Technology'
     },
@@ -225,6 +226,34 @@ export default function Gallery() {
                   <li className="flex items-center">
                     <span className="text-emerald-600 mr-2">✓</span>
                     Dedicated lab assistants
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={computerLabImage}
+                alt="Computer lab with students"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Computer Laboratory</h3>
+                <p className="text-gray-600 mb-4">
+                  Modern computer lab equipped with up-to-date technology for ICT education, coding classes, and digital learning experiences.
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Modern computers and software
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Coding and programming classes
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Expert ICT instructors
                   </li>
                 </ul>
               </div>
