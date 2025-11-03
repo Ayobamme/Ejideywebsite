@@ -1,12 +1,10 @@
 import { BookOpen, Beaker, Music, Trophy, Globe, Calculator, Palette, Microscope, Zap } from 'lucide-react';
-import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.23.jpeg';
-import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.22.jpeg';
-import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
+import eyfImage1 from '../assets/WhatsApp Image 2025-11-02 at 20.35.38 copy.jpeg';
+import eyfImage2 from '../assets/WhatsApp Image 2025-11-02 at 20.46.59.jpeg';
 
 const eyfImages = [
   eyfImage1,
-  eyfImage2,
-  eyfImage3
+  eyfImage2
 ];
 
 const nurseryImages = [
