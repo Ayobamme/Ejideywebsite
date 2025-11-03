@@ -5,6 +5,7 @@ import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.22.jpeg';
 import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
 import modernClassroomImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.28.jpeg';
 import computerLabImage from '../assets/WhatsApp Image 2025-10-12 at 03.58.17.jpeg';
+import eyfPlayroomImage from '../assets/WhatsApp Image 2025-11-02 at 20.46.59 copy.jpeg';
 
 export default function Gallery() {
   const galleryImages = [
@@ -44,7 +45,7 @@ export default function Gallery() {
       category: 'Sports'
     },
     {
-      url: eyfImage1,
+      url: eyfPlayroomImage,
       title: 'Early Years Foundation',
       category: 'Facilities'
     },
