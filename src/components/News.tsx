@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Calendar, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import footballClubImage from '../assets/football-club.jpeg';
 import computerLabImage from '../assets/WhatsApp Image 2025-10-12 at 03.58.17.jpeg';
-import cookingImage from '../assets/WhatsApp Image 2025-11-02 at 20.38.28.jpeg';
+import cookingImage from '../assets/WhatsApp Image 2025-11-02 at 22.11.41.jpeg';
 import teachersTrainingImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.22 copy.jpeg';
 
 export default function News() {
