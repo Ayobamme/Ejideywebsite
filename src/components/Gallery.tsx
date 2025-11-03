@@ -20,7 +20,7 @@ export default function Gallery() {
       category: 'Academic'
     },
     {
-      url: '/images/ejidey 4.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.23.08.jpeg',
       title: 'Playful Learning',
       category: 'Facilities'
     },
