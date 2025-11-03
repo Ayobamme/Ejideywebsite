@@ -55,7 +55,7 @@ export default function Gallery() {
       category: 'Academic'
     },
     {
-      url: eyfImage3,
+      url: '/images/WhatsApp Image 2025-11-02 at 21.15.10.jpeg',
       title: 'Learning Through Play',
       category: 'Facilities'
     }
