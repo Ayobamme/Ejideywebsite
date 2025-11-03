@@ -29,7 +29,7 @@ export default function Gallery() {
       category: 'Technology'
     },
     {
-      url: '/images/ejidey 14.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.02.35.jpeg',
       title: 'Project Exhibition',
       category: 'Events'
     },
