@@ -136,7 +136,7 @@ export default function About() {
               {
                 name: 'Mrs Lawal',
                 role: 'Head of Primary School',
-                image: '/images/academic-director.jpeg'
+                image: '/images/WhatsApp Image 2025-11-19 at 06.12.19.jpeg'
               }
             ].map((leader, index) => (
               <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">

@@ -46,7 +46,6 @@ interface UploadedFile {
 
 interface DocumentUploads {
   passport: UploadedFile | null;
-  birthCertificate: UploadedFile | null;
 }
 
 const initialFormState: FormState = {
@@ -83,8 +82,7 @@ const initialFormState: FormState = {
 };
 
 const initialDocumentState: DocumentUploads = {
-  passport: null,
-  birthCertificate: null
+  passport: null
 };
 
 export default function ApplicationForm({ setActiveSection }: ApplicationFormProps) {
@@ -176,11 +174,6 @@ export default function ApplicationForm({ setActiveSection }: ApplicationFormPro
 
     if (!documents.passport) {
       alert('Please upload a passport photograph');
-      return;
-    }
-
-    if (!documents.birthCertificate) {
-      alert('Please upload birth certificate');
       return;
     }
 
@@ -347,8 +340,7 @@ export default function ApplicationForm({ setActiveSection }: ApplicationFormPro
     label: string;
     required: boolean;
   }> = [
-    { key: 'passport', label: 'Passport Photograph', required: true },
-    { key: 'birthCertificate', label: 'Birth Certificate', required: true }
+    { key: 'passport', label: 'Passport Photograph', required: true }
   ];
 
   return (
