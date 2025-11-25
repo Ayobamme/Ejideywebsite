@@ -1,4 +1,5 @@
 import { Target, Eye, Heart, Trophy } from 'lucide-react';
+import schoolBuildingImage from '../assets/WhatsApp Image 2025-11-02 at 20.16.02.jpeg';
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <img
-                src="/images/ejidey 3.jpg"
+                src={schoolBuildingImage}
                 alt="School building"
                 className="rounded-2xl shadow-2xl"
               />
@@ -30,6 +31,21 @@ export default function About() {
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Today, Ejidey Schools stands as a testament to what dedicated educators, supportive parents, and motivated students can achieve together.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-50 via-white to-emerald-50 p-10 rounded-3xl shadow-xl border border-blue-100">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Learning Environment</h2>
+            <div className="space-y-6">
+              <p className="text-lg text-gray-600 leading-relaxed">
+                At EJIDEY SCHOOLS, we provide a warm, stimulating, and child-friendly environment where every learner feels safe, valued, and inspired to learn.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Our classrooms are well-structured, colorful, and equipped with modern learning materials that promote creativity and active participation. Each child is encouraged to explore, ask questions, and discover new ideas in an atmosphere filled with care and positivity.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We maintain a clean and organized space that supports focus and excellence. From our well-ventilated classrooms to our serene playgrounds, every corner of the school reflects our commitment to quality education and moral upbringing.
               </p>
             </div>
           </div>
@@ -108,26 +124,26 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: 'Dr. Sarah Johnson',
-                role: 'Principal',
-                image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400'
+                name: 'Alhaja Rasheedat Ejidey Ogunbadejo',
+                role: 'Founder',
+                image: '/images/founder.jpeg'
               },
               {
-                name: 'Mr. Michael Chen',
-                role: 'Vice Principal',
-                image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400'
+                name: 'MRS B. A UMORU',
+                role: 'Director',
+                image: '/images/director.jpeg'
               },
               {
-                name: 'Ms. Emily Rodriguez',
-                role: 'Academic Director',
-                image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400'
+                name: 'Mrs Lawal',
+                role: 'Head of Primary School',
+                image: '/images/WhatsApp Image 2025-11-19 at 06.12.19.jpeg'
               }
             ].map((leader, index) => (
               <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <img
                   src={leader.image}
                   alt={leader.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-72 object-fill"
                 />
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">{leader.name}</h3>

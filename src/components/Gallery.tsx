@@ -1,49 +1,63 @@
+import scienceLabImage from '../assets/science-lab.jpeg';
+import footballClubImage from '../assets/football-club.jpeg';
+import eyfImage1 from '../assets/WhatsApp Image 2025-10-07 at 00.01.23.jpeg';
+import eyfImage2 from '../assets/WhatsApp Image 2025-10-07 at 00.01.22.jpeg';
+import eyfImage3 from '../assets/WhatsApp Image 2025-10-07 at 00.01.26.jpeg';
+import modernClassroomImage from '../assets/WhatsApp Image 2025-10-07 at 00.01.28.jpeg';
+import computerLabImage from '../assets/WhatsApp Image 2025-10-12 at 03.58.17.jpeg';
+import eyfPlayroomImage from '../assets/WhatsApp Image 2025-11-02 at 20.46.59 copy.jpeg';
+
 export default function Gallery() {
   const galleryImages = [
     {
-      url: '/images/ejidey 1.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.21.12.jpeg',
       title: 'Students in Classroom',
       category: 'Academic'
     },
     {
-      url: '/images/ejidey 3.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.43.11.jpeg',
       title: 'Learning Environment',
       category: 'Academic'
     },
     {
-      url: '/images/ejidey 4.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.23.08.jpeg',
       title: 'Playful Learning',
       category: 'Facilities'
     },
     {
-      url: '/images/ejidey 5.jpg',
+      url: computerLabImage,
       title: 'Computer Lab',
       category: 'Technology'
     },
     {
-      url: '/images/ejidey 14.jpg',
+      url: '/images/WhatsApp Image 2025-11-02 at 21.02.35.jpeg',
       title: 'Project Exhibition',
       category: 'Events'
     },
     {
-      url: 'https://images.pexels.com/photos/8923165/pexels-photo-8923165.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Library Study',
-      category: 'Academic'
+      url: scienceLabImage,
+      title: 'Science Laboratory',
+      category: 'STEM'
     },
     {
-      url: 'https://images.pexels.com/photos/8923194/pexels-photo-8923194.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: footballClubImage,
       title: 'Sports Activities',
       category: 'Sports'
     },
     {
-      url: 'https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Group Learning',
+      url: eyfPlayroomImage,
+      title: 'Early Years Foundation',
+      category: 'Facilities'
+    },
+    {
+      url: '/images/WhatsApp Image 2025-11-02 at 21.15.10.jpeg',
+      title: 'Nursery Classroom',
       category: 'Academic'
     },
     {
-      url: 'https://images.pexels.com/photos/8923123/pexels-photo-8923123.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'School Events',
-      category: 'Events'
+      url: '/images/WhatsApp Image 2025-11-02 at 21.41.52.jpeg',
+      title: 'Learning Through Play',
+      category: 'Facilities'
     }
   ];
 
@@ -59,7 +73,7 @@ export default function Gallery() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {['All', 'Academic', 'Arts', 'Sports', 'Facilities', 'Events', 'Technology'].map((category) => (
+            {['All', 'Academic', 'Sports', 'Facilities', 'Events', 'Technology', 'STEM'].map((category) => (
               <button
                 key={category}
                 className={`px-6 py-2 rounded-full font-semibold transition-colors ${
@@ -108,8 +122,8 @@ export default function Gallery() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="School building"
+                src={modernClassroomImage}
+                alt="Ejidey classroom interior"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
@@ -136,8 +150,8 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Library"
+                src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Ejidey resource shelves"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
@@ -164,8 +178,8 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Sports facilities"
+                src={footballClubImage}
+                alt="Indoor activity space"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
@@ -176,15 +190,15 @@ export default function Gallery() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center">
                     <span className="text-emerald-600 mr-2">✓</span>
-                    Olympic-size swimming pool
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-emerald-600 mr-2">✓</span>
                     Multi-sport gymnasium
                   </li>
                   <li className="flex items-center">
                     <span className="text-emerald-600 mr-2">✓</span>
                     Outdoor playing fields
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Sports equipment and facilities
                   </li>
                 </ul>
               </div>
@@ -192,8 +206,8 @@ export default function Gallery() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Science lab"
+                src={scienceLabImage}
+                alt="Science laboratory equipment"
                 className="w-full h-64 object-cover"
               />
               <div className="p-8">
@@ -213,6 +227,34 @@ export default function Gallery() {
                   <li className="flex items-center">
                     <span className="text-emerald-600 mr-2">✓</span>
                     Dedicated lab assistants
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={computerLabImage}
+                alt="Computer lab with students"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Computer Laboratory</h3>
+                <p className="text-gray-600 mb-4">
+                  Modern computer lab equipped with up-to-date technology for ICT education, coding classes, and digital learning experiences.
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Modern computers and software
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Coding and programming classes
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-emerald-600 mr-2">✓</span>
+                    Expert ICT instructors
                   </li>
                 </ul>
               </div>

@@ -1,4 +1,4 @@
-import { GraduationCap, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 interface FooterProps {
   setActiveSection: (section: string) => void;
@@ -11,9 +11,11 @@ export default function Footer({ setActiveSection }: FooterProps) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-emerald-600 p-2 rounded-lg">
-                <GraduationCap className="w-8 h-8 text-white" />
-              </div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F62a26c7086fc4ae99a9017c79f08981e%2F58e4c97a77b94d38b03f508a44edfff8?format=webp&width=200"
+                alt="Ejidey Schools logo"
+                className="w-12 h-12 rounded-lg border border-emerald-500 object-contain bg-white p-1"
+              />
               <div>
                 <h3 className="text-xl font-bold">Ejidey Schools</h3>
                 <p className="text-sm text-gray-400">Magodo</p>
@@ -82,7 +84,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                <span className="text-gray-400">info@ejideyschools.com</span>
+                <span className="text-gray-400">info@ejideychools.ng</span>
               </li>
             </ul>
           </div>
